@@ -1,0 +1,27 @@
+﻿body{
+
+    background-color: blue;
+}
+
+p {
+    height: 75px;
+    width: 130px;
+    background-color: aqua;
+}
+
+h1 {
+    font-style: italic;
+    color: red;
+}
+
+a {
+    color: black
+}
+
+input {
+    width: 115px
+}
+
+
+
+
