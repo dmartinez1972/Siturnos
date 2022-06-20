@@ -10,20 +10,14 @@
 </head>
 <body>
     <form id="form1" runat="server" method="post">
-        <div>
-        </div>
-        <p>
-            <asp:Label ID="Label1" runat="server" Text="Usuario : "></asp:Label><br />
+        <section class="form-login">   
+            <h5>Formulario Login</h5> 
+            <asp:Label ID="Label3" runat="server" Text="Usuario : "></asp:Label><br />
             <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox><br />
-        </p>
-        <p>
             <asp:Label ID="Label2" runat="server" Text="Clave : "></asp:Label><br />
             <asp:TextBox ID="txtClave" runat="server"></asp:TextBox><br />
-        </p>
-        <p>
             <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click" /><br />
-        </p>
-        
+         </section>
     </form>
 </body>
 </html>
