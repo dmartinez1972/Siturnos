@@ -25,12 +25,17 @@ namespace Siturnos
 
             objUsuario.Usuarios = this.txtUsuario.Text;
             objUsuario.Password = Encryption.Hash(this.txtClave.Text);
-            objUsuarioCN.Login(objUsuario);
+            bool Usuario = objUsuarioCN.Login(objUsuario);
 
-
-
-
-
+            if (Usuario == true)
+            {
+                Response.Redirect("SiturnosMainPage.aspx");
+            }
+            else
+            {
+                Response.Write("<script>alert('Por favor Ingrese un Usuario y Password Valido')</script>");
+            }
+                        
         }
     }
 }
